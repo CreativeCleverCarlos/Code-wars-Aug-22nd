@@ -105,3 +105,37 @@ Your function would return the following array:
 
 All of the strings in the array passed to your function will be different lengths, so you will not have to decide how to order multiple strings of the same length.
 **/
+
+//P.R.E.P (Parameter, Return, Example, Pseudo code)
+
+//P - an array will be given, string, 
+
+//R - Return to the console
+
+//E - ["Telescopes", "Glasses", "Eyes", "Monocles"] returns ["Eyes", "Glasses", "Monocles", "Telescopes"]
+
+function sortByLength (array) {
+    let newOrderedArray = array.sort((a,b) => a.length - b.length)
+    return newOrderedArray
+  };
+
+  console.log(sortByLength(["hm","i","think",'got',"emmm"]))
+
+  /**
+ Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.  
+**/
+
+//P.R.E.P - Parameter, Return, Example, Pseudo code
+
+//P - an array will be given, decimal number/ positive & negative
+
+//R - return to the console
+
+//E - Input: [1, 5.2, 4, 0, -1] should return 9.2
+
+function sum (numbers) {
+    let sumOfNumbers = numbers.reduce((a, b) => a + b, 0)
+    return sumOfNumbers
+};
+
+console.log(sum([1.1, 2, 3.3, 4, 5.5]))
